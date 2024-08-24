@@ -1,0 +1,8 @@
+// Стили для
+@mixin bigText-ff-fs-fw-lh-tt {
+  font-family: $font-family-text-big;
+  font-size: 10px;
+  font-weight: 900;
+  line-height: 12.14px;
+  text-transform: uppercase;
+}

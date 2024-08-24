@@ -33,7 +33,7 @@ body {
     max-width: 1200px;
   }
   @media (min-width: $width-desktop) {
-    // max-width: 1440px;
+    max-width: 100%;
   }
 }
 
@@ -43,4 +43,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.container {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
