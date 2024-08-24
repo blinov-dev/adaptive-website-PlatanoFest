@@ -1,0 +1,36 @@
+.burger-menu {
+  width: 25px;
+  height: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &:hover,
+  &:active {
+    .burger-menu__toggle {
+      background-color: $color-main-dark;
+    }
+  }
+}
+
+.burger-menu__toggle {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: $color-white;
+  transition: background-color 0.3s ease;
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+  }
+  &:before {
+    top: -6px;
+  }
+  &:after {
+    bottom: -6px;
+  }
+}
