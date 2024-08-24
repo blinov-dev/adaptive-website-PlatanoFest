@@ -1,27 +1,53 @@
 /* здесь подключите шрифты */
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Drukwidecyr";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+  /* Safari, Android, iOS */ url("../fonts/drukwidecyr/drukwidecyr-bold.ttf")
+      format("truetype"),
+    url("../../fonts/drukwidecyr/drukwidecyr-bold.woff") format("woff"),
+    url("../../fonts/drukwidecyr/drukwidecyr-bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DrukTextWideCyr";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../../fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
-    url("../../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2");
+  src:
+  /* Safari, Android, iOS */ url("../fonts/druktextwidecyr/druktextwidecyr-medium.ttf")
+      format("truetype"),
+    url("../../fonts/druktextwidecyr/druktextwidecyr-medium.woff")
+      format("woff"),
+    url("../../fonts/druktextwidecyr/druktextwidecyr-medium.woff2")
+      format("woff2");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "DrukTextWideCyr";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-display: swap;
-  src: url("../../fonts/Montserrat/Montserrat-Medium.woff") format("woff"),
-    url("../../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2");
+  src:
+  /* Safari, Android, iOS */ url("../fonts/druktextwidecyr/druktextwidecyr-medium.ttf")
+      format("truetype"),
+    url("../../fonts/druktextwidecyr/druktextwidecyr-medium.woff")
+      format("woff"),
+    url("../../fonts/druktextwidecyr/druktextwidecyr-medium.woff2")
+      format("woff2");
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: "DrukTextWideCyr";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 900;
   font-display: swap;
-  src: url("../../fonts/Montserrat/Montserrat-Bold.woff") format("woff"),
-    url("../../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2");
+  src:
+  /* Safari, Android, iOS */ url("../fonts/druktextwidecyr/druktextwidecyr-bold.ttf")
+      format("truetype"),
+    url("../../fonts/druktextwidecyr/druktextwidecyr-bold.woff") format("woff"),
+    url("../../fonts/druktextwidecyr/druktextwidecyr-bold.woff2")
+      format("woff2");
 }
