@@ -1,23 +1,41 @@
 const burgerButton = document.querySelector('.burger-menu');
 const navigationMenu = document.querySelector('.navigation');
+const header = document.querySelector('.header');
 
-burgerButton.addEventListener('click', () => {
-  navigationMenu.style.transform = 'translateY(0)';
-});
+function openNavMenu() {
+  burgerButton.addEventListener('click', () => {
+    if (!header.classList.contains('header-mobile')) {
+      navigationMenu.style.transform = 'translateY(0)';
+    } else {
+      header.classList.toggle('header-mobile--open');
+    }
+  });
+}
 
-let lastScrollY = window.scrollY;
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > lastScrollY) {
-    navigationMenu.style.transform = 'translateY(0)';
-  } else if (window.scrollY === 0) {
-    navigationMenu.style.transform = 'translateY(-100%)';
+function openHeaderNav() {
+  if (window.innerWidth < 768) {
+    header.classList.add('header-mobile');
+    openNavMenu();
   }
-  lastScrollY = window.scrollY;
-});
+  if (window.innerWidth >= 768) {
+    header.classList.remove('header-mobile');
+    openNavMenu();
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY) {
+        navigationMenu.style.transform = 'translateY(0)';
+      } else if (window.scrollY === 0) {
+        navigationMenu.style.transform = 'translateY(-100%)';
+      }
+      lastScrollY = window.scrollY;
 
-window.history.scrollRestoration = 'manual';
+      window.history.scrollRestoration = 'manual';
 
-window.addEventListener('load', () => {
-  window.scrollTo(0, 0);
-});
+      window.addEventListener('load', () => {
+        window.scrollTo(0, 0);
+      });
+    });
+  }
+}
+
+openHeaderNav();

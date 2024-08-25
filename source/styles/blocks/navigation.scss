@@ -1,15 +1,16 @@
 .navigation {
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   gap: 54px;
   margin: 0 auto;
+  background-color: $color-dark;
+  transform: translateY(-100%);
+  transition: transform 1s ease;
 }
 
 .navigation__logo {
-  min-width: 119px;
-  height: 22px;
+  min-width: 132px;
+  height: 78px;
   &:hover,
   &:active {
     .nav-logo {
@@ -58,15 +59,25 @@
   }
 }
 
+.navigation__address {
+  display: none;
+  color: $color-white;
+  @include bigText-ff-fs-fw-lh-tt;
+  line-height: 17px;
+  font-weight: 400;
+}
+
 @media (min-width: $width-tablet) {
   .navigation {
-    width: 100%;
-    background-color: $color-dark;
-    padding: 14px 0;
     position: fixed;
     top: 0;
     left: 0;
-    transform: translateY(-100%);
-    transition: transform 0.5s ease;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 0;
+  }
+  .navigation__logo {
+    min-width: 119px;
+    height: 22px;
   }
 }
