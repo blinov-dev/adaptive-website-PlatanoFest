@@ -1,0 +1,118 @@
+.promo {
+  min-height: 100vh;
+  background-image: url("../../images/promo/bg/preview-bg-min@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  gap: 50px;
+}
+
+.promo__logo {
+  max-width: 100%;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    top: -100px;
+    left: -120px;
+    background-image: url("../../images/promo/decor-1@1x.png");
+  }
+  &::after {
+    bottom: -100px;
+    right: -120px;
+    background-image: url("../../images/promo/date@1x.png");
+  }
+}
+
+.promo__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.promo__button-buy {
+  width: 70%;
+  background-color: transparent;
+  border: 2px solid $color-white;
+  padding: 16px;
+}
+
+@media (min-width: $width-tablet) {
+  .promo {
+    background-image: url("../../images/promo/bg/preview-bg-med@1x.png");
+  }
+  .promo__container {
+    padding-top: 270px;
+    gap: 140px;
+  }
+  .promo__logo {
+    position: relative;
+    max-width: 500px;
+    max-height: 296px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      margin: 0;
+    }
+  }
+  .promo__button-buy {
+    max-width: 305px;
+    padding: 16px 90px;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .promo {
+      background-image: url("../../images/promo/bg/preview-bg-med@2x.png");
+    }
+  }
+}
+@media (min-width: $width-desktop) {
+  .promo {
+    background-image: url("../../images/promo/bg/preview-bg-big@1x.png");
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .promo {
+      background-image: url("../../images/promo/bg/preview-bg-big@2x.png");
+    }
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .promo {
+    background-image: url("../../images/promo/bg/preview-bg-min@2x.png");
+  }
+}
