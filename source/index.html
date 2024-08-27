@@ -28,7 +28,7 @@
 
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#artists">АРТИСТЫ</a>
+            <a class="navigation__link" href="#stars">АРТИСТЫ</a>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#info">ИНФОРМАЦИЯ</a>
@@ -81,25 +81,50 @@
       </div>
     </section>
 
-    <section class="artists" id="artists">
-      <div class="artists__container container">
-        <h1 class="artists__title">ХЭДЛАЙНЕРЫ</h1>
-        <div class="artists__headliner">
-          <ul class="artists__list">
-            <li class="artists__item">
-              <article class="headliner artist">
-                <div class="headliner__container artist__container">
-                  <img class="artist__image" src="images/artists/headliners/medjikul@1x.jpg" alt="МЕДЖИКУЛ" width="293"
-                    height="293">
-                </div>
-
-                <h2 class="artist__name">МЕДЖИКУЛ</h2>
-              </article>
-            </li>
+    <section class="stars" id="starts">
+      <div class="stars__container container">
+        <h1 class="visually-hidden">Выступающие звезды</h1>
+        <div class="stars__main-info headliners">
+          <h2 class="stars__title headliners__title">ХЭДЛАЙНЕРЫ</h2>
+          <ul class="stars__list headliners__list">
           </ul>
         </div>
-      </div>
 
+        <div class="stars__main-info artists">
+          <h2 class="stars__title artists__title">АРТИСТЫ</h2>
+          <div class="artists__container">
+            <ul class="stars__list artists__list">
+            </ul>
+            <div class="more-info">
+              <h3 class="more-info__title">Список приглашенных артистов постоянно пополняется</h3>
+              <p class="more-info__text">
+                Подписывайся на нас в соц. сетях чтобы не пропустить обновления</p>
+              <div class="socials more-info__socials">
+                <a class="socials__link socials__link--vk" href="#">
+                  <svg class="socials__icon" viewBox="0 0 25 25">
+                    <use xlink:href="icons/stack.svg#vk-icon"></use>
+                  </svg>
+                </a>
+                <a class="socials__link socials__link--instagram" href="#">
+                  <svg class="socials__icon" viewBox="0 0 25 25">
+                    <use xlink:href="icons/stack.svg#instagram-icon"></use>
+                  </svg>
+                </a>
+                <a class="socials__link socials__link--telegram" href="#">
+                  <svg class="socials__icon" viewBox="0 0 25 25">
+                    <use xlink:href="icons/stack.svg#telegram-icon"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info" id="info">
+      <div class="info__container container">
+      </div>
     </section>
   </main>
 </body>

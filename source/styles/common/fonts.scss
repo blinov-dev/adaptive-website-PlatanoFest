@@ -51,3 +51,15 @@
     url("../../fonts/druktextwidecyr/druktextwidecyr-bold.woff2")
       format("woff2");
 }
+
+@font-face {
+  font-family: "DrukCyr";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src:
+  /* Safari, Android, iOS */ url("../fonts/drukcyr/drukcyr-bold.ttf")
+      format("truetype"),
+    url("../../fonts/drukcyr/drukcyr-bold.woff") format("woff"),
+    url("../../fonts/drukcyr/drukcyr-bold.woff2") format("woff2");
+}

@@ -1,0 +1,130 @@
+.stars {
+  min-height: 100vh;
+}
+
+.stars__container {
+  max-width: 1360px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.stars__main-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.headliners {
+  gap: 45px;
+}
+.artists {
+  gap: 30px;
+}
+
+.stars__title {
+  font-weight: 900;
+}
+.headliners__title {
+  font-size: 20px;
+  line-height: 24px;
+}
+.artists__title {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.stars__list {
+  display: grid;
+  justify-content: center;
+  padding: 10px 20px;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.headliners__list {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 295px));
+  align-self: center;
+}
+
+.artists__list {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 110px));
+}
+
+.artists__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.more-info {
+  max-width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: $font-family-text-medium;
+  font-weight: 900;
+}
+
+.more-info__title {
+  font-size: 14px;
+  line-height: 17.75px;
+}
+.more-info__text {
+  font-size: 11px;
+  line-height: 13.75px;
+}
+
+.more-info__socials {
+  align-self: center;
+  .socials__icon {
+    fill: $color-black;
+    transition: fill 0.3s ease;
+    &:hover {
+      fill: $color-white;
+    }
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .headliners__title {
+    font-size: 60px;
+    line-height: 72.84px;
+    margin-bottom: 45px;
+  }
+  .artists__title {
+    font-size: 30px;
+    line-height: 36.42px;
+    margin-bottom: 30px;
+  }
+
+  .headliners__list {
+    align-self: normal;
+  }
+  .artists__list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 160px));
+  }
+
+  .artists__container {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 30px;
+  }
+
+  .more-info__socials {
+    align-self: normal;
+  }
+  .more-info {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+@media (min-width: $width-desktop) {
+  .stars__main-info {
+    text-align: left;
+  }
+  .artists__container {
+    align-items: center;
+    gap: 70px;
+  }
+}

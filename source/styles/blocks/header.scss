@@ -1,6 +1,7 @@
 .header {
   width: 100%;
-  position: absolute;
+  position: fixed;
+  z-index: 2;
 }
 
 .header__container {
@@ -74,10 +75,5 @@
       top: 0;
       transform: rotate(45deg);
     }
-  }
-}
-
-@media (min-width: $width-tablet) {
-  .header__container {
   }
 }

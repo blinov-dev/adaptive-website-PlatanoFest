@@ -1,2 +1,64 @@
 .artist {
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    .artist__image {
+      transform: rotate(1.5deg);
+    }
+  }
+}
+
+.artist__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artist__image {
+  transition: transform 0.3s linear;
+  @include adaptiveImage;
+  transform: rotate(-1.5deg);
+}
+
+.artist__caption {
+  position: absolute;
+  font-family: $font-family-artist-big;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $color-white;
+  text-align: center;
+}
+
+.headliners {
+  .artist__caption {
+    font-size: 40px;
+    line-height: 50.47px;
+    bottom: -25px;
+  }
+}
+.artists {
+  .artist__caption {
+    font-size: 28px;
+    line-height: 24px;
+    bottom: -15px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .headliners {
+    .artist__caption {
+      font-size: 54px;
+      line-height: 70.47px;
+      bottom: -35px;
+    }
+  }
+  .artists {
+    .artist__caption {
+      font-size: 32px;
+      line-height: 41.76px;
+      bottom: -20px;
+    }
+  }
 }
