@@ -1,14 +1,3 @@
-.stars {
-  min-height: 100vh;
-}
-
-.stars__container {
-  max-width: 1360px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
 .stars__main-info {
   display: flex;
   flex-direction: column;
@@ -21,14 +10,9 @@
   gap: 30px;
 }
 
-.stars__title {
-  font-weight: 900;
-}
-.headliners__title {
-  font-size: 20px;
-  line-height: 24px;
-}
 .artists__title {
+  font-weight: 900;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 20px;
 }
@@ -88,6 +72,7 @@
 
 @media (min-width: $width-tablet) {
   .headliners__title {
+    text-align: center;
     font-size: 60px;
     line-height: 72.84px;
     margin-bottom: 45px;
@@ -120,6 +105,9 @@
   }
 }
 @media (min-width: $width-desktop) {
+  .headliners__title {
+    text-align: left;
+  }
   .stars__main-info {
     text-align: left;
   }

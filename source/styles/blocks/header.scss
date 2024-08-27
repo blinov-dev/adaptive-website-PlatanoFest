@@ -5,8 +5,10 @@
 }
 
 .header__container {
+  max-width: 860px;
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 14px 20px;
