@@ -155,6 +155,9 @@
 }
 
 @media (min-width: $width-desktop) {
+  .path__container {
+    padding: 100px 80px;
+  }
   .path__content {
     display: grid;
     grid-template-columns: 1fr 0.5fr;

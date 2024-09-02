@@ -1,7 +1,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 40px;
 }
 
 .footer__left-column {
@@ -23,12 +23,22 @@
   .navigation__item {
     width: 100%;
   }
+  .footer__nav-link {
+    color: $color-white;
+    @include bigText-ff-fs-fw-lh-tt;
+    transition: color 0.5s ease;
+    &:hover,
+    &:active {
+      color: $color-main;
+    }
+  }
 }
 
 @media (min-width: $width-tablet) {
   .footer {
     grid-template-columns: 1fr 1fr;
     max-width: 440px;
+    gap: 80px;
   }
   .footer__left-column {
     .socials {

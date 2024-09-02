@@ -85,6 +85,9 @@
 }
 
 @media (min-width: $width-desktop) {
+  .contacts__container {
+    padding: 100px 80px;
+  }
   .contacts__map {
     width: 575px;
     height: 575px;
