@@ -12,8 +12,8 @@ function createTicketTemplate({
               <div class="ticket__main-info">
                 <span class="ticket__header">${header}</span>
                 <div class="ticket__text-block">
-                  <h2 class="ticket__title">${type}<br> ${days}
-                  </h2>
+                  <h3 class="ticket__title">${type}<br> ${days}
+                  </h3>
                   <p class="ticket__description">
                     ${description}
                   </p>

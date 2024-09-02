@@ -52,6 +52,13 @@
   }
 }
 
+.contacts__map {
+  width: 96%;
+  height: 350px;
+  background-color: $color-gray;
+  margin: 0 auto;
+}
+
 @media (min-width: $width-tablet) {
   .contacts__content {
     grid-template-columns: 1fr 1fr;
