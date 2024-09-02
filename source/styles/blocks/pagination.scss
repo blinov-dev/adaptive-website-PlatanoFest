@@ -1,0 +1,53 @@
+.pagination {
+  height: 260px;
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  gap: 40px;
+  right: 40px;
+  top: 32%;
+  &::before {
+    position: absolute;
+    left: 4px;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background-color: $color-white;
+  }
+}
+
+.pagination__link {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $color-white;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    z-index: 2;
+    background-color: $color-white;
+    border-radius: 50%;
+    transition: opacity 0.5s linear;
+  }
+}
+.pagination__link--active {
+  &::before {
+    opacity: 0.35;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .pagination {
+    display: flex;
+  }
+}
+@media (min-width: $width-desktop) {
+}

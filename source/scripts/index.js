@@ -5,6 +5,7 @@ import tickets from './mocks/tickets';
 import renderArtists from './render-artists.js';
 import renderTickets from './render-tickets.js';
 import activeTab from './path-tabs.js';
+import './pagination.js';
 
 renderArtists(artists);
 renderTickets(tickets);

@@ -1,0 +1,38 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.footer__left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  .socials {
+    justify-content: center;
+  }
+}
+
+.footer__copyright {
+  font-size: 9px;
+  line-height: 11.41px;
+  color: $color-copyright;
+}
+
+.footer__right-column {
+  .navigation__item {
+    width: 100%;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    max-width: 440px;
+  }
+  .footer__left-column {
+    .socials {
+      justify-content: left;
+    }
+  }
+}
