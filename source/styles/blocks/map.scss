@@ -1,0 +1,109 @@
+.map {
+  background-color: $color-map-bg;
+  padding-bottom: 110px;
+}
+
+.map__content {
+  max-width: 100%;
+}
+
+.map__mobile-image {
+  width: 100%;
+}
+.map__image {
+  @include adaptiveImage;
+}
+
+.map__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.map__item {
+  position: relative;
+  font-family: $font-family-text-medium;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 17.75px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 42px;
+    height: 39px;
+    background-image: url("../../icons/map-list-style.svg");
+  }
+}
+
+.map__number {
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22.5px;
+}
+
+.map__description {
+  position: absolute;
+  left: 60px;
+  bottom: -10px;
+  font-family: $font-family-text-medium;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.68px;
+}
+
+@media (min-width: $width-tablet) {
+  .map {
+    @include adaptiveBgImage("../../images/map/map-bg-med@1x.png");
+    background-position: 70% center;
+  }
+  .map__mobile-image {
+    display: none;
+  }
+  .map__list {
+    max-width: 270px;
+  }
+
+  .map__item {
+    &::before {
+      top: 8px;
+    }
+  }
+
+  .map__number {
+    top: 16px;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .map {
+      background-image: url("../../images/map/map-bg-med@2x.png");
+    }
+  }
+}
+@media (min-width: $width-desktop) {
+  .map {
+    background-image: url("../../images/map/map-bg-big@1x.png");
+    background-position: center center;
+  }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .map {
+      background-image: url("../../images/map/map-bg-big@2x.png");
+    }
+  }
+}

@@ -41,7 +41,7 @@
           </li>
         </ul>
 
-        <button class="navigation__button-buy button-buy">КУПИТЬ БИЛЕТ</button>
+        <a class="navigation__button-buy button-buy" href="#tickets">КУПИТЬ БИЛЕТ</a>
 
         <span class="navigation__address">
           PLATANO FEST<br>
@@ -138,6 +138,159 @@
           <p class="info__description">
             И конечно же, множество кулинарных открытий и сюрпризов вас ждёт на нашем фуд-корте!
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="map" id="map">
+      <div class="map__container container">
+        <h1 class="map__title section-title">Карта</h1>
+        <div class="map__content content">
+          <ul class="map__list">
+            <li class="map__item">
+              <span class="map__number">1</span>
+              Главная сцена Platano Fest
+            </li>
+            <li class="map__item">
+              <span class="map__number">2</span>
+              Фуд-корт с кухней Латинской Америки
+            </li>
+            <li class="map__item">
+              <span class="map__number">3</span>
+              Площадка лейбла ”Музыка у моря”
+            </li>
+            <li class="map__item">
+              <span class="map__number">4</span>
+              Лаундж/чиллаут зона для отдыха
+            </li>
+            <li class="map__item">
+              <span class="map__number">5</span>
+              Кемпинг <span class="map__description"><br>билеты приобретаются отдельно</span>
+            </li>
+            <li class="map__item">
+              <span class="map__number">6</span>
+              Парковка для гостей фестиваля
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="map__mobile-image">
+        <img class="map__image" src="./images/map/map-bg-min@1x.png" alt="Карта местоположения Platano Fest"
+          width="1440" height="800">
+      </div>
+    </section>
+
+    <section class="tickets" id="tickets">
+      <div class="tickets__container container">
+        <h1 class="tickets__title section-title">Купить билеты</h1>
+        <p class="tickets__description">Цены увеличиваются по датам и квотам. На каждую ценовую категорию выделено
+          ограниченное количество билетов.
+          Как только билеты в категории заканчиваются — цена увеличивается.</p>
+        <ul class="tickets__list">
+        </ul>
+      </div>
+    </section>
+
+    <section class="path" id="path">
+      <div class="path__container container">
+        <h1 class="path__title section-title">КАК ДОБРАТЬСЯ</h1>
+
+        <div class="path__tabs">
+          <button class="path__button button" data-tab="path-tab1">МАРШРУТНОЕ ТАКСИ</button>
+          <button class="path__button button" data-tab="path-tab2">ТРАНСФЕР</button>
+          <button class="path__button button" data-tab="path-tab3">ПРОЛОЖИТЬ МАРШРУТ</button>
+        </div>
+
+        <div class="path__content">
+          <ul class="path__list">
+            <li class="path__item tab-item tab-one" id="path-tab1">
+              <div class="tab-item__info">
+                <h2 class="tab-item__subtitle">
+                  АВТОБУС<br> 102 И 102М
+                </h2>
+                <p class="tab-item__description">
+                  Новороссийск (автовокзал) — Абрау-Дюрсо
+                </p>
+                <p class="tab-item__description">
+                  с 06:00 по 21.:00 каждые 30 мин
+                </p>
+              </div>
+
+              <div class="tab-item__info">
+                <h2 class="tab-item__subtitle">
+                  МАРШРУТНОЕ<br> ТАКСИ
+                </h2>
+                <p class="tab-item__description">
+                  Абрау-Дюрсо — Площадка Platano Fest
+                </p>
+                <p class="tab-item__description">
+                  с 10:00 по 19:00 каждые 60 мин
+                </p>
+              </div>
+            </li>
+
+            <li class="path__item tab-item tab-two" id="path-tab2">
+              <p class="tab-item__text">Вы можете оформить услуги трансфера при покупке билетов на сайте</p>
+
+              <a class="tab-item__button-buy button-buy" href="#tickets">КУПИТЬ БИЛЕТ</a>
+
+              <div class="transfer">
+                <ul class="transfer__list">
+                  <li class="transfer__item">
+                    <div class="transfer__info">
+                      <p class="transfer__time">2 июля в 08:00 и 10:00
+                      </p>
+                      <p class="transfer__path">Краснодар — Площадка Platano Fest</p>
+                    </div>
+                  </li>
+
+                  <li class="transfer__item">
+                    <div class="transfer__info">
+                      <p class="transfer__time">3 июля в 08:00 и 11:00
+                      </p>
+                      <p class="transfer__path">Краснодар — Площадка Platano Fest</p>
+                    </div>
+                  </li>
+
+                  <li class="transfer__item">
+                    <div class="transfer__info">
+                      <p class="transfer__time">3 июля в 13:00
+                      </p>
+                      <p class="transfer__path">Краснодар — Площадка Platano Fest</p>
+                    </div>
+                  </li>
+
+                  <li class="transfer__item">
+                    <div class="transfer__info">
+                      <p class="transfer__time">4 июля в 16:00
+                      </p>
+                      <p class="transfer__path">Краснодар — Площадка Platano Fest</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="path__item tab-item tab-three" id="path-tab3">
+              <p class="tab-item__text">Вы можете добраться до фестиваля на своем авто и разместиться в кемпинге</p>
+
+              <a class="tab-item__button-buy button-buy" href="#tickets">КУПИТЬ БИЛЕТ</a>
+
+              <div class="maps-type">
+                <h2 class="maps-type__title">Проложить маршрут до кемпинга</h2>
+                <div class="maps-type__buttons">
+                  <a class="maps-type__button button" href="#tickets">ЯНДЕКС КАРТЫ</a>
+                  <a class="maps-type__button button" href="#tickets">GOOGLE MAPS</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="path__map">
+            <iframe class="map-frame"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5674.054145627675!2d37.55097448840123!3d44.678226048308275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f200c084aad4e9%3A0xe3116222a937e6f0!2sCosta%20Alta!5e0!3m2!1sru!2sru!4v1725256152570!5m2!1sru!2sru"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
     </section>

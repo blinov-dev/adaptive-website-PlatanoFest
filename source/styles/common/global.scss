@@ -78,3 +78,15 @@ body {
     text-align: left;
   }
 }
+
+.content {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: $font-family-text-medium;
+  gap: 15px;
+  @media (min-width: $width-tablet) {
+    max-width: 445px;
+  }
+}

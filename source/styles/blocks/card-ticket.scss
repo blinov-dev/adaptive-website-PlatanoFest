@@ -1,0 +1,99 @@
+.ticket {
+  position: relative;
+  max-width: 618px;
+  background-color: $color-white;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px 18px;
+  margin: 0 auto;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px dashed $color-gray;
+  }
+}
+
+.ticket__main-info {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.ticket__header {
+  font-size: 12px;
+  line-height: 15.22px;
+}
+
+.ticket__text-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 270px;
+  height: 100%;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.ticket__title {
+  font-size: 24px;
+  line-height: 30.43px;
+}
+
+.ticket__description {
+  font-size: 9px;
+  line-height: 11.41px;
+}
+
+.ticket__additional-info {
+  margin-top: auto;
+  font-size: 9px;
+  line-height: 11.41px;
+  color: $color-gray;
+}
+
+.ticket__buy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 30px 0;
+}
+
+.ticket__price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 11.41px;
+}
+
+.ticket__value {
+  color: $color-gray;
+}
+.ticket__value--active {
+  color: $color-black;
+}
+
+@media (min-width: $width-tablet) {
+  .ticket {
+    grid-template-columns: 1fr 0.5fr;
+    &::after {
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 60%;
+      border-bottom: none;
+      border-right: 2px dashed $color-gray;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+}

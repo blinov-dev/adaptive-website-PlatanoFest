@@ -1,9 +1,6 @@
 .promo {
+  @include adaptiveBgImage("../../images/promo/bg/preview-bg-min@1x.png");
   min-height: 100vh;
-  background-image: url("../../images/promo/bg/preview-bg-min@1x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .promo__container {
@@ -99,6 +96,13 @@
     .promo {
       background-image: url("../../images/promo/bg/preview-bg-big@2x.png");
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo {
+    min-height: 100%;
+    padding-bottom: 100px;
   }
 }
 
